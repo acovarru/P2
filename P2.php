@@ -5,20 +5,7 @@
     
     
 <title>xkcd Password Generator P2</title> 
-
-<style>
-h1 {
-       font-size: 29px;
-  
-    text-align: center;
-    }
-    
-    body {
-       font-size: 23px;
-  
-    text-align: center;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
   
   
 </head>
@@ -212,6 +199,9 @@ function random_word() {
 }
 
 ?>
+
+    <p style="color: black">What is xkcd password?</p>
+<font size="4" color="gray">explain how xkcd password works here</font>
 
 
 </body>
