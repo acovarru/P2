@@ -1,8 +1,10 @@
 
 <html>
+<head>
+ 
     
-<head>   
-<title>Alejandro Covarrubias P2</title> 
+    
+<title>xkcd Password Generator P2</title> 
 
 <style>
 h1 {
@@ -16,7 +18,9 @@ h1 {
   
     text-align: center;
     }
-</style> 
+</style>
+  
+  
 </head>
 
 <h1>
@@ -24,6 +28,8 @@ h1 {
 </h1>
 
 <body>
+    
+  
   
     <form method="post">
         
@@ -48,9 +54,10 @@ if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol'
         show_word($_POST["word_number"]);
     }
     
-   echo random_number()."\n"; 
+   echo random_number(); 
    echo random_symbol()."\n"; 
 }
+
 
 else
 if( isset($_POST['word_number'])&&isset($_POST['number']) ){
@@ -82,6 +89,7 @@ if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
    echo random_symbol()."\n"; 
 }
 
+
 else
 if( isset($_POST['word_number'])&&isset($_POST['upper']) ){
   //  echo $_POST["word_number"];
@@ -94,6 +102,11 @@ if( isset($_POST['word_number'])&&isset($_POST['upper']) ){
 
 }
 
+
+
+
+
+
 else
     if ( isset($_POST['word_number']) ){
   //  echo $_POST["word_number"];
@@ -103,6 +116,9 @@ else
          
    
 }
+
+
+
 
 /*Function to call to generate a given number of words
  * Takes word as input, as the number of words to be generated
@@ -123,7 +139,10 @@ function show_word($word) {
 //return ucfirst($word_string);
 }
 
-/*Function to call to generate a given number of words in Uppercase
+
+
+
+/*Function to call to generate a given number of words
  * Takes word as input, as the number of words to be generated
  */
 function cap_word($word) {
@@ -164,7 +183,7 @@ function random_number($length=1 ) {
     
     for ($k = 0; $k < $length; $k++) {
         
-        $string .= $chars[rand(0, strlen($chars) - 1)];
+        $string = $chars[rand(0, strlen($chars) - 1)];
     }
     return $string;
 }
@@ -181,7 +200,7 @@ function random_symbol($length=1 ) {
     return $string;
 }
 
-/*Function to generate random word for password*/
+
 function random_word() {
      $string = '';
     /* Current dictionary is just an array. But dictionary can be enhanced: we can read from a db, read from a file */
@@ -193,6 +212,8 @@ function random_word() {
 }
 
 ?>
+
+
 </body>
 
 </html>
