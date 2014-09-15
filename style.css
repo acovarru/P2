@@ -2,10 +2,32 @@ h1 {
        font-size: 29px;
   
     text-align: center;
+
     }
     
     body {
        font-size: 23px;
   
     text-align: center;
+
+    }
+
+form {
+       font-size: 23px;
+  
+    background-color: #DCDCDC;
+    width: 50%;
+    height: 20%;
+    
+   margin: 0 auto;
+
+    }
+    
+    div {
+        width: 50%;
+     height: 10%;
+     font-size: 23px;
+  
+     background-color: #E6E6FA;
+
     }
