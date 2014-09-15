@@ -29,12 +29,14 @@
     </form> 
     
 <?php
-
+include 'generate.php';
+//$generate= new generate();
 if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol']) ){
   //  echo $_POST["word_number"];
     
     if(isset($_POST['upper'])){
-        cap_word($_POST["word_number"]);
+      
+       cap_word($_POST["word_number"]);
     }
     else
     {
@@ -50,7 +52,7 @@ else
 if( isset($_POST['word_number'])&&isset($_POST['number']) ){
   //  echo $_POST["word_number"];
    if(isset($_POST['upper'])){
-        cap_word($_POST["word_number"]);
+       cap_word($_POST["word_number"]);
     }
     else
     {
@@ -83,7 +85,7 @@ if( isset($_POST['word_number'])&&isset($_POST['upper']) ){
  // $example=show_word($_POST["word_number"]);
 //echo $example;  
 //echo ucfirst($example);
-    cap_word($_POST["word_number"]);
+   cap_word($_POST["word_number"]);
     //echo cap_word(show_word($_POST["word_number"]));
    
 
@@ -91,119 +93,24 @@ if( isset($_POST['word_number'])&&isset($_POST['upper']) ){
 
 
 
-
-
-
 else
     if ( isset($_POST['word_number']) ){
   //  echo $_POST["word_number"];
     
-        
+      
     show_word($_POST["word_number"]);
          
    
 }
 
 
-
-
-/*Function to call to generate a given number of words
- * Takes word as input, as the number of words to be generated
- */
-function show_word($word) {
-
-     $word_string = '';
-    for ($i = 0; $i < $word; $i++) {
-        
-       // $word_length=rand(3, 15);
-        $word_string = "".random_word();
-    
-      
-           echo $word_string;
-   
-     
-    }
-//return ucfirst($word_string);
-}
-
-
-
-
-/*Function to call to generate a given number of words
- * Takes word as input, as the number of words to be generated
- */
-function cap_word($word) {
-
-     $word_string = '';
-    for ($i = 0; $i < $word; $i++) {
-        
-       // $word_length=rand(3, 15);
-        $word_string = "".random_word();
-    
-       if($i==0){
-           echo ucfirst($word_string);
-       }
-       else
-           echo $word_string;
-        
-     
-    }
-//return ucfirst($word_string);
-}
-
-/*Function to generate random string, DEPRECATED: deprecated since requirement is to provide real words*/
-function random_string($length ) {
-    $chars = 'abcdefghijklmnopqrstuvwxyz';
-    $string = '';
-    
-    for ($j = 0; $j < $length; $j++) {
-        
-        $string = $chars[rand(0, strlen($chars) - 1)];
-    }
-    return $string;
-}
-
-/*Function to generate random number for password*/
-function random_number($length=1 ) {
-    $chars = '123456789';
-    $string = '';
-    
-    for ($k = 0; $k < $length; $k++) {
-        
-        $string = $chars[rand(0, strlen($chars) - 1)];
-    }
-    return $string;
-}
-
-/*Function to generate random symbol for password*/
-function random_symbol($length=1 ) {
-    $chars = '!@$&?';
-    $string = '';
-    
-    for ($l = 0; $l < $length; $l++) {
-        
-        $string = $chars[rand(0, strlen($chars) - 1)];
-    }
-    return $string;
-}
-
-
-function random_word() {
-     $string = '';
-    /* Current dictionary is just an array. But dictionary can be enhanced: we can read from a db, read from a file */
-    $word_dictionary = array("foo", "bar", "hello", "world","enhance","random","horse","meat","river","london");
-   
-    $string.= $word_dictionary[array_rand($word_dictionary)];
-    
-    return $string;
-}
-
 ?>
 
     <p style="color: black">What is xkcd password?</p>
-<font size="4" color="gray">explain how xkcd password works here</font>
+<font size="4" color="gray">XKCD, is a webcomic created by Randall Munroe   , this generator only uses common English words.
+That�s important, because the more unusual words are used, the harder the password will be to remember. </font>
 
-
+<p style="color: black">Description of your app </p>
 </body>
 
 </html>
