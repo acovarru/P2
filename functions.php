@@ -32,6 +32,26 @@ function show_word($word) {
 }
 
 
+   /*Function to call to generate a given number of words with Hyphen
+ * Takes word as input, as the number of words to be generated
+ */
+function show_wordHyphen($word) {
+
+     $word_string = '';
+    for ($i = 0; $i < $word; $i++) {
+        
+       // $word_length=rand(3, 15);
+        $word_string = "".random_word();
+    
+      
+           echo $word_string."-";
+   
+     
+    }
+//return ucfirst($word_string);
+}
+
+
 
 
 /*Function to call to generate a given number of words
@@ -50,6 +70,29 @@ function cap_word($word) {
        }
        else
            echo $word_string;
+        
+     
+    }
+//return ucfirst($word_string);
+}
+
+
+/*Function to call to generate a given number of words with Hyphen
+ * Takes word as input, as the number of words to be generated
+ */
+function cap_wordHyphen($word) {
+
+     $word_string = '';
+    for ($i = 0; $i < $word; $i++) {
+        
+       // $word_length=rand(3, 15);
+        $word_string = "".random_word();
+    
+       if($i==0){
+           echo ucfirst($word_string)."-";
+       }
+       else
+           echo $word_string."-";
         
      
     }

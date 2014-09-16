@@ -31,7 +31,7 @@
         <input type="checkbox" name="number" value="number">Add number
         <input type="checkbox" name="symbol" value="symbol">Add special symbol 
         <input type="checkbox" name="upper" value="upper">Uppercase<br>
-        <input type="checkbox" name="upper" value="upper">Hyphen<br>
+        <input type="checkbox" name="hyphen" value="hyphen">Hyphen<br>
         
   
 
@@ -41,9 +41,18 @@
      <br>
 <?php
 
+if( isset($_POST['hyphen'])){
+    include 'generatePasswordH.php';
+    generatePasswordH();
+}
 
-include 'generatePassword.php';
-generatePassword();
+else{
+      include 'generatePassword.php';
+    generatePassword();
+    
+}
+
+
 
 ?>
 </div>
