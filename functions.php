@@ -123,16 +123,53 @@ function random_number($length=1 ) {
     return $string;
 }
 
+
+
 /*Function to generate random symbol for password*/
-function random_symbol($length=1 ) {
-    $chars = '!@$&?';
+function random_symbol() {
+   
     $string = '';
-    
-    for ($l = 0; $l < $length; $l++) {
-        
-        $string = $chars[rand(0, strlen($chars) - 1)];
-    }
+     $char_dictionary = array("!", "@", "$", "&","?");
+      $string.= $char_dictionary[array_rand($char_dictionary)];
     return $string;
+}
+
+    /*Function to call to generate a given number of symbols
+ * Takes symbol as input, as the number of symbols to be generated
+ */
+function show_symbol($symbol) {
+
+     $symbol_string = '';
+    for ($i = 0; $i < $symbol; $i++) {
+        
+       // $word_length=rand(3, 15);
+        $symbol_string = "".random_symbol();
+    
+      
+           echo $symbol_string;
+   
+     
+    }
+//return ucfirst($word_string);
+}
+
+    /*Function to call to generate a given number of symbols
+ * Takes symbol as input, as the number of symbols to be generated
+ */
+function show_symbolHyphen($symbol) {
+
+     $symbol_string = '';
+    for ($i = 0; $i < $symbol; $i++) {
+        
+       // $word_length=rand(3, 15);
+        $symbol_string = "".random_symbol();
+    
+      
+           echo $symbol_string."-";
+   
+     
+    }
+//return ucfirst($word_string);
 }
 
 

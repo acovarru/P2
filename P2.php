@@ -19,27 +19,22 @@
 <center>
     
     <form method="post">
+       <br>
+        <input type="checkbox" name="number" value="number"> Add number
+        <input type="checkbox" name="symbol" value="symbol"> Add special symbol 
+        <input type="checkbox" name="upper" value="upper"> Add Uppercase
+        <input type="checkbox" name="hyphen" value="hyphen"> Add Hyphen<br>
         <br>
-        Word number <input type="text" name="word_number" size="1">
-        <input type="submit" value="do it!"><br>
-        <br>
-       
-   
+       # of symbols <input type="text" name="symbol_number" size="1">
+       # of words <input type="text" name="word_number" size="1">
+       # of #s <input type="text" name="number_number" size="1">
+        <input type="submit" value="generate!"><br>
 
-   
-       
-        <input type="checkbox" name="number" value="number">Add number
-        <input type="checkbox" name="symbol" value="symbol">Add special symbol 
-        <input type="checkbox" name="upper" value="upper">Uppercase<br>
-        <input type="checkbox" name="hyphen" value="hyphen">Hyphen<br>
-        
-  
-
-    
     </form> 
  <div>   
      <br>
 <?php
+
 
 if( isset($_POST['hyphen'])){
     include 'generatePasswordH.php';

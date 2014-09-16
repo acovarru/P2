@@ -9,6 +9,14 @@ function generatePasswordH(){
     
     
     include 'functions.php';
+    
+    $length=0;
+if( isset($_POST['symbol_number'])){
+    $length=$_POST['symbol_number'];
+}
+else{
+    $length=1;
+}
 //$generate= new generate();
 if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol']) ){
   //  echo $_POST["word_number"];
@@ -26,7 +34,7 @@ if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol'
     
    echo random_number();
             echo "-";
-   echo random_symbol()."\n"; 
+   echo show_symbolHyphen($length)."\n"; 
             
 }
 
@@ -63,7 +71,7 @@ if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
     }
     
    
-   echo random_symbol()."\n"; 
+   echo show_symbolHyphen($length)."\n"; 
            
 }
 
