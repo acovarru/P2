@@ -30,7 +30,8 @@
        
         <input type="checkbox" name="number" value="number">Add number
         <input type="checkbox" name="symbol" value="symbol">Add special symbol 
-       <input type="checkbox" name="upper" value="upper">Uppercase<br>
+        <input type="checkbox" name="upper" value="upper">Uppercase<br>
+        <input type="checkbox" name="upper" value="upper">Hyphen<br>
         
   
 
@@ -39,80 +40,10 @@
  <div>   
      <br>
 <?php
-include 'generate.php';
-//$generate= new generate();
-if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol']) ){
-  //  echo $_POST["word_number"];
-    
-    if(isset($_POST['upper'])){
-      
-       cap_word($_POST["word_number"]);
-    }
-    else
-    {
-        show_word($_POST["word_number"]);
-    }
-    
-   echo random_number(); 
-   echo random_symbol()."\n"; 
-}
 
 
-else
-if( isset($_POST['word_number'])&&isset($_POST['number']) ){
-  //  echo $_POST["word_number"];
-   if(isset($_POST['upper'])){
-       cap_word($_POST["word_number"]);
-    }
-    else
-    {
-        show_word($_POST["word_number"]);
-    }
-    
-
-   echo random_number()."\n"; 
-}
-
-else
-if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
-  //  echo $_POST["word_number"];
-    if(isset($_POST['upper'])){
-        cap_word($_POST["word_number"]);
-    }
-    else
-    {
-        show_word($_POST["word_number"]);
-    }
-    
-   
-   echo random_symbol()."\n"; 
-}
-
-
-else
-if( isset($_POST['word_number'])&&isset($_POST['upper']) ){
-  //  echo $_POST["word_number"];
- // $example=show_word($_POST["word_number"]);
-//echo $example;  
-//echo ucfirst($example);
-   cap_word($_POST["word_number"]);
-    //echo cap_word(show_word($_POST["word_number"]));
-   
-
-}
-
-
-
-else
-    if ( isset($_POST['word_number']) ){
-  //  echo $_POST["word_number"];
-    
-      
-    show_word($_POST["word_number"]);
-         
-   
-}
-
+include 'generatePassword.php';
+generatePassword();
 
 ?>
 </div>
