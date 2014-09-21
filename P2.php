@@ -27,7 +27,7 @@
         <br>
        # of symbols <input type="text" name="symbol_number" size="1">
        # of words <input type="text" name="word_number" size="1">
-       # of #s <input type="text" name="number_number" size="1">
+      
         <input type="submit" value="generate!"><br>
 
     </form> 
