@@ -5,6 +5,12 @@
  * and open the template in the editor.
  */
 
+/**
+ * Description of generatePassword.php
+ *
+ * @author acovarru
+ */
+
 function generatePassword(){
     
     

@@ -5,7 +5,7 @@
  */
 
 /**
- * Description of show_word
+ * Description of functions.php
  *
  * @author acovarru
  */
@@ -124,6 +124,15 @@ function random_number($length=1 ) {
 }
 
 
+/*Function to generate random number between 0 and 9,999 for random dictionary index*/
+function random_number_dictionary() {
+
+    $string= rand ( 0 , 9999 );
+
+    return $string;
+}
+
+
 
 /*Function to generate random symbol for password*/
 function random_symbol() {
@@ -176,9 +185,11 @@ function show_symbolHyphen($symbol) {
 function random_word() {
      $string = '';
     /* Current dictionary is just an array. But dictionary can be enhanced: we can read from a db, read from a file */
-    $word_dictionary = array("foo", "bar", "hello", "world","enhance","random","horse","meat","river","london");
-   
-    $string.= $word_dictionary[array_rand($word_dictionary)];
+   // $word_dictionary = array("foo", "bar", "hello", "world","enhance","random","horse","meat","river","london");
+    $word_dictionary = file('./dictionary/words.txt', FILE_IGNORE_NEW_LINES);
+ 
+   // random_number(1);
+  $string= $word_dictionary[random_number_dictionary()];
     
     return $string;
 }

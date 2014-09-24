@@ -5,6 +5,12 @@
  * and open the template in the editor.
  */
 
+/**
+ * Description of generatePasswordH
+ *
+ * @author acovarru
+ */
+
 function generatePasswordH(){
     
     
