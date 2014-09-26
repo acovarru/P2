@@ -17,7 +17,7 @@
 </h1>
 <body>
  
-<p style="color: black">Description of your app </p>
+<p style="color: black">Description of application </p>
 
 <font size="4" color="gray">The application generates a random password based on the options provided above. User can select from:
 <ul>
