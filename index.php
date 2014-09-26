@@ -5,11 +5,14 @@
     
     
 <title>xkcd Password Generator P2</title> 
-<link rel="stylesheet" href="style.css">
-  
+<!--link rel="stylesheet" href="style.css"-->
+<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/style.css' />
+<link rel='stylesheet' media='screen and (min-width: 101px) and (max-width: 900px)' href='css/mobile.css' />  
   
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
 </head>
 
 <h1>
@@ -41,9 +44,8 @@
 
 require "logic.php";
 
-?>     
-     </center>
-
+?>         
 </div>
-
+    
+  </center>
 </html>

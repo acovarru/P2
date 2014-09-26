@@ -5,7 +5,7 @@
     
     
 <title>About xkcd Password Generator</title> 
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="css/style2.css">
   
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,7 @@ If we are to add symbols and numbers we add more complexity to password, hence, 
  <p style="color: black">XKCD password mark-words-horse-9-! is a lot easier to remember than mwh9!</p>
  </font>
  <br>
-  <a class="pure-button" href="P2.php">Back</a> 
+  <a class="pure-button" href="index.php">Back</a> 
 </body>
 
 </html>

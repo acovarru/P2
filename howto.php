@@ -5,7 +5,7 @@
     
     
 <title>How to use xkcd Password Generator</title> 
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="css/style2.css">
   
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +58,7 @@ Once selections are made user clicks on generate!</font>
 <br>
 
 <br>
-<a class="pure-button" href="P2.php">Back</a> 
+<a class="pure-button" href="index.php">Back</a> 
 </font>
 
 
