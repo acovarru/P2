@@ -10,8 +10,8 @@ Number of words to be included on password,
 include numbers
 include symbols,
 number of symbols to be included on password,
-include an Uppercase for first letter,
-include Hyphen to separate words.
+include an upper case for first letter,
+include hyphen to separate words.
 The process to generate the password is simple and user intuitive: user enables checkbox for selection to be included on password , inputs the number of words to be included on password and if symbol checkbox is selected user has the option to input the number of symbols to be included on password. Once selections are made user clicks on generate!
 
 
