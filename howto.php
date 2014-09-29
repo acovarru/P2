@@ -19,7 +19,7 @@
  
 <p style="color: black">Description of application </p>
 
-<font size="4" color="gray">The application generates a random password based on the options provided above. User can select from:
+<font size="4" color="gray">The application generates a random password based on the options selected by user. User can select from:
 <ul>
 <li>Number of words to be included on password
 <li>Include Numbers
