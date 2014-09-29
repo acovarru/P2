@@ -43,7 +43,12 @@ if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol'
    
    if( isset($_POST['symbol_number'])){
   
+     if(($_POST['symbol_number'])>4){
+          echo "<font color='red'> Maximum of 4 random symbols allowed per password </font>";  
+        }
+       if(($_POST['symbol_number'])<=4){
     echo show_symbol($_POST['symbol_number']);
+       }
 }
 if( empty($_POST['symbol_number'])){
 
@@ -85,7 +90,12 @@ if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
    
     if( isset($_POST['symbol_number'])){
   
+    if(($_POST['symbol_number'])>4){
+          echo "<font color='red'> Maximum of 4 random symbols allowed per password </font>";  
+        }
+       if(($_POST['symbol_number'])<=4){
     echo show_symbol($_POST['symbol_number']);
+       }
 }
 if( empty($_POST['symbol_number'])){
 
@@ -122,7 +132,7 @@ else
  }
  
  if(($_POST['word_number'])>=10){
-        echo "Maximum of 9 random words allowed per password";
+        echo "<font color='red'>Maximum of 9 random words allowed per password</font>";
     }
     
 }
