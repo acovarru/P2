@@ -122,7 +122,7 @@ else
  }
  
  if(($_POST['word_number'])>=10){
-        echo "# of words must be less than 10";
+        echo "Maximum of 9 random words allowed per password";
     }
     
 }
