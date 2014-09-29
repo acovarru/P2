@@ -15,16 +15,12 @@ function generatePasswordH(){
     
     
     include 'functions.php';
-    
-    $length=0;
-if( isset($_POST['symbol_number'])){
-    $length=$_POST['symbol_number'];
-}
-else{
-    $length=1;
-}
+
+
+
 //$generate= new generate();
 if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol']) ){
+    global $length;
   //  echo $_POST["word_number"];
     
     if(isset($_POST['upper'])){
@@ -40,7 +36,17 @@ if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol'
     
    echo random_number();
             echo "-";
-   echo show_symbolHyphen($length)."\n"; 
+   
+               if( isset($_POST['symbol_number'])){
+  
+    echo show_symbolHyphen($_POST['symbol_number']);
+}
+if( empty($_POST['symbol_number'])){
+
+   
+   echo show_symbolHyphen(1)."\n"; 
+   
+}
             
 }
 
@@ -66,6 +72,7 @@ if( isset($_POST['word_number'])&&isset($_POST['number']) ){
 else
 if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
   //  echo $_POST["word_number"];
+    global $length;
     if(isset($_POST['upper'])){
         cap_wordHyphen($_POST["word_number"]);
                  
@@ -77,7 +84,16 @@ if( isset($_POST['word_number'])&&isset($_POST['symbol']) ){
     }
     
    
-   echo show_symbolHyphen($length)."\n"; 
+      if( isset($_POST['symbol_number'])){
+  
+    echo show_symbolHyphen($_POST['symbol_number']);
+}
+if( empty($_POST['symbol_number'])){
+
+   
+   echo show_symbolHyphen(1)."\n"; 
+   
+}
            
 }
 
