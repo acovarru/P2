@@ -22,7 +22,7 @@ function generatePassword(){
   
     //$length=$_POST['symbol_number'];
 //}
-
+ if(($_POST['word_number'])<10){
 
     
 //$generate= new generate();
@@ -119,7 +119,11 @@ else
          
    
 }
-
+ }
+ 
+ if(($_POST['word_number'])>=10){
+        echo "# of words must be less than 10";
+    }
     
 }
 ?>

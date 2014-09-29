@@ -33,7 +33,7 @@
         <input type="checkbox" name="hyphen" value="hyphen"> Add Hyphen<br>
         <br>
        # of symbols <input type="text" name="symbol_number" size="1">
-       # of words <input type="text" name="word_number" size="1">
+        # of words (max=9) <input type="text" name="word_number" size="1">
       
         <input type="submit" value="generate!"><br>
 

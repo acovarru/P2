@@ -16,7 +16,7 @@ function generatePasswordH(){
     
     include 'functions.php';
 
-
+ if(($_POST['word_number'])<10){
 
 //$generate= new generate();
 if( isset($_POST['word_number'])&&isset($_POST['number'])&&isset($_POST['symbol']) ){
@@ -121,7 +121,12 @@ else
          
    
 }
-
+ }
+ 
+ if(($_POST['word_number'])>=10){
+        echo "# of words must be less than 10";
+    }
+    
     
 }
 ?>
