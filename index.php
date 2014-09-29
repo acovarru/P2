@@ -24,7 +24,7 @@
      <a class="pure-button" href="howto.php">How to Use</a> 
 </h2>
 <center>
-    
+    <body> 
     <form method="post">
        <br>
         <input type="checkbox" name="number" value="number"> Add number
@@ -46,6 +46,6 @@ require "logic.php";
 
 ?>         
 </div>
-    
+  <body/>  
   </center>
 </html>
