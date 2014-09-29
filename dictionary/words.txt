@@ -1378,7 +1378,7 @@ el
 extra
 especially
 interface
-pussy
+p#deprecatedbadword
 partners
 budget
 rated
@@ -1715,7 +1715,7 @@ eyes
 relationship
 workers
 farm
-fucking
+f#deprecatedbadword
 georgia
 peace
 traditional
@@ -2063,7 +2063,7 @@ congress
 fuel
 username
 walk
-fuck
+f#deprecatedbadword
 produced
 italian
 paperback
@@ -2149,7 +2149,7 @@ joe
 guys
 integrated
 configuration
-cock
+c#deprecatedbadword
 merchant
 comprehensive
 expert
@@ -3370,13 +3370,13 @@ clearance
 connections
 inventory
 converter
-suck
+s#deprecatedbadword
 organisation
 babe
 checks
 reached
 becoming
-blowjob
+b#deprecatedbadword
 safari
 objective
 indicated
@@ -4547,7 +4547,7 @@ arrived
 creates
 faces
 tourist
-cocks
+c#deprecatedbadword
 av
 mayor
 murder
@@ -5642,7 +5642,7 @@ fotos
 incredible
 britney
 freeware
-fucked
+f#deprecatedbadword
 donation
 outer
 crop
@@ -6034,7 +6034,7 @@ inclusion
 hopefully
 brilliant
 turner
-sucking
+s#deprecatedbadword
 cents
 reuters
 ti
@@ -7465,7 +7465,7 @@ coaches
 vessels
 harbour
 walks
-sucks
+s#deprecatedbadword
 sol
 keyboards
 sage
