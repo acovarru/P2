@@ -20,6 +20,8 @@ The process to generate the password is simple and user intuitive: user enables 
 http://screencast.com/t/Fz7cPMuWbli4
 
 ## Details for teaching team
+After screencast demo was created,
+one minor enhancement was added: error message for XKCD password generator app for the case when a user attempts to submit more than 9 words.
 No additional details, no login required
 
 
