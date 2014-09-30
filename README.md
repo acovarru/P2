@@ -21,7 +21,7 @@ http://screencast.com/t/Fz7cPMuWbli4
 
 ## Details for teaching team
 After screencast demo was created,
-one minor enhancement was added: error message for XKCD password generator app for the case when a user attempts to submit more than 9 words.
+one minor enhancement was added: error message for XKCD password generator app for the case when a user attempts to submit more than maximum words, maximum symbols allowed.
 No additional details, no login required
 
 
